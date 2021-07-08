@@ -1,5 +1,5 @@
 {
-  "repository": "#",
+  "repository": "https://github.com/Isaactan95/Isaactan95.github.io.git",
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
