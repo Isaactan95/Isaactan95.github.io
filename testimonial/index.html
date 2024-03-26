@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://unpkg.com/three/build/three.module.js"
+				}
+			}</script>
+		<script src="https://unpkg.com/three@0.139.2/build/three.min.js"></script>
+		<script src="https://unpkg.com/three@0.139.2/examples/js/controls/OrbitControls.js"></script>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.big-spot {
+				width: 20px;
+				height: 20px;
+				background-color: #ffffff;
+				border-radius: 50%;
+			}
+			.container-left {
+				position: relative;
+				left: 10rem;
+			}
+			.container-right {
+				position: relative;
+				right: 10rem;
+			}
+			.container-right img{
+				padding-right: 10vw;
+			}
+			.container-left img{
+				padding-left: 10vw;
+			}
+		
+			.vertical-line {
+				width: 2px; /* Width of the line */
+				height: 200%; /* Height of the line */
+				background-color: #ffff; /* Color of the line */
+				position: absolute;
+				left: 50%; /* Position the line in the middle */
+				transform: translateX(-50%); /* Adjust the position to center it horizontally */
+				z-index: 99999;
+				overflow: visible; /* Allow the line to overflow */
+				top: -200px;
+			}
+			.vertical-line.hidden{
+				display: none;
+				width: 0px;
+			}
+			.horizontal-line {
+				width: 500vw; /* Width of the line covers the entire viewport width */
+				height: 2px; /* Height of the line */
+				background-color: #ffff; /* Color of the line */
+				position: absolute;
+				top: 50%; /* Position the line in the middle */
+				transform: translateY(-50%); /* Adjust the position to center it vertically */
+				z-index: 99999;
+				overflow: visible; /* Allow the line to overflow */
+				left: -60vw; /* Position the line to start from the left edge of the viewport */
+			}
+
+		</style>
+
+		  
+	</head>
+	<body>
+		
+		<div class="reveal">
+			<div class="slides">
+				<section data-auto-animate>
+					<h1><span class="fragment highlight-green">Isaac</span>的故事</h1>
+				</section>
+				
+				<section data-auto-animate>
+					<p>但是...</p>
+				</section>
+				<section data-auto-animate>
+					<h2>在Isaac前...</h2>
+				</section>
+				
+				<section data-auto-animate>
+					<h2>在Isaac前...</h2>
+					<p>曾经是<span class="fragment highlight-blue">Jonathan</span></p>
+				</section>
+				<section data-auto-animate>
+					<p>这是<span class="fragment fade-in-then-out">Jonathan的故事</span></p>
+				</section>
+				<section data-auto-animate>
+					<p>这是Jonathan的故事</p>
+					<img data-src="./assets/super_young_1.jpg" style="width: 80%; height: 60%;"/>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>1995 ~ 2007</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/christian.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>1995 ~ 2007</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/beaten_up.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>1995 ~ 2007</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/child_depress.jpeg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>1995 ~ 2007</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/UPSR.jpeg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2008</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/school_fighting.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2008</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/clb.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2008</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/stab.jpeg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2008</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/away_from_god.jpeg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2009</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/bad_influence.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2009</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/cc.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2009</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/gang.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2009</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/cocainjpeg.jpeg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2009</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/finger.jpeg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2010</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/cf.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2010</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/depression_1.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2010</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/mute.jpeg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2011</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/gym.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2012</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/exam.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2013</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/tarc.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2013</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/clubbing.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section data-auto-animate>
+					<section>
+						<div class="container-left">
+							<p>2014</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/depression_2.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<span class="vertical-line"></span>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2015</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/failed.png" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<span class="vertical-line hidden"></span>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2015</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/failed.png" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2015</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/curtin.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2015</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/turning_point.jpeg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+				</section>
+				<section data-auto-animate>
+					<p>Jonathan的故事...</p>
+					<p class="fragment">终。</p>
+				</section>
+				<section>
+					<p>Isaac的故事...</p>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2016</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/depression.webp" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2016</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/pan_mee.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2016</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/SMPC.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2016</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/suicide.webp" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2017</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/cg.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2017</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/cg_2.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2017</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/camp.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2017</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/SMPC_1.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2018</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/SMPC_2.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2018</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/australia.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2018</p>
+						</div>
+						<div class="container-right">
+							<img src="./assets/code.webp" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<span class="vertical-line"></span>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2019</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/monash.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<span class="vertical-line"></span>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2020</p>
+						</div>
+					</section>
+					<span class="vertical-line"></span>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2021</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/master.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<span class="vertical-line"></span>
+					<section data-auto-animate>
+						<div class="container-left">
+							<p>2022</p>
+						</div>
+					</section>
+					<span class="vertical-line"></span>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2023</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/depression_1.webp" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2023</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/imfree.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2023</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/imfree.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<div class="container-right">
+							<p>2023</p>
+						</div>
+						<div class="container-left">
+							<img src="./assets/ivy.jpg" alt="" style="width: 40%; height: 30%;">
+						</div>
+					</section>
+				</section>
+				<section>
+					<div>
+						<p>2024</p>
+						<p class="fragment" style="left: 10px;">To Be Continue...</p>
+					</div>
+				</section>
+				<section>
+					<div>
+						<p>Q&A</p>
+					</div>
+				</section>
+				<section>
+					<div>
+						<p>Thank You..</p>
+					</div>
+				</section>
+			</div>
+		  </div>
+		 
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		
+		
+	</body>
+</html>
