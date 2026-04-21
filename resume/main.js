@@ -34,6 +34,48 @@
         draw();
     }
 
+    /* ── Typing animation for name ── */
+    const typedEl = document.querySelector('.typed-text');
+    const cursorEl = document.querySelector('.typed-cursor');
+    if (typedEl) {
+        const parts = [
+            { text: 'Isaac ', highlight: false },
+            { text: 'Tan', highlight: true }
+        ];
+        let partIdx = 0, charIdx = 0;
+        const SPEED = 100;
+
+        function typeNext() {
+            if (partIdx >= parts.length) {
+                if (cursorEl) cursorEl.style.display = 'none';
+                return;
+            }
+            const part = parts[partIdx];
+            const char = part.text[charIdx];
+
+            if (charIdx === 0 && part.highlight) {
+                const span = document.createElement('span');
+                span.className = 'highlight';
+                typedEl.appendChild(span);
+            }
+
+            const target = part.highlight
+                ? typedEl.querySelector('.highlight')
+                : typedEl;
+
+            target.insertBefore(document.createTextNode(char), null);
+            charIdx++;
+
+            if (charIdx >= part.text.length) {
+                partIdx++;
+                charIdx = 0;
+            }
+            setTimeout(typeNext, SPEED);
+        }
+
+        setTimeout(typeNext, 600);
+    }
+
     /* ── Scroll-reveal (IntersectionObserver) ── */
     const reveals = document.querySelectorAll('[data-aos]');
     if ('IntersectionObserver' in window) {

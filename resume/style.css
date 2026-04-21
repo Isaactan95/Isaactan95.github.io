@@ -98,6 +98,14 @@ body{
     line-height:1.1;
     margin-bottom:.75rem;
 }
+.typed-name{display:inline-flex;align-items:baseline}
+.typed-text{min-height:1.1em}
+.typed-cursor{
+    color:#58a6ff;
+    font-weight:300;
+    animation:blink 1s step-end infinite;
+    margin-left:2px;
+}
 .highlight{
     background:linear-gradient(135deg,#58a6ff,#1f6feb);
     -webkit-background-clip:text;
