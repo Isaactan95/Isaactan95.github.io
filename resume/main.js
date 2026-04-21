@@ -34,46 +34,59 @@
         draw();
     }
 
-    /* ── Typing animation for name ── */
+    /* ── Typing animation for name (looping) ── */
     const typedEl = document.querySelector('.typed-text');
-    const cursorEl = document.querySelector('.typed-cursor');
     if (typedEl) {
-        const parts = [
-            { text: 'Isaac ', highlight: false },
-            { text: 'Tan', highlight: true }
-        ];
-        let partIdx = 0, charIdx = 0;
-        const SPEED = 100;
+        const FULL_TEXT = 'Isaac Tan';
+        const HIGHLIGHT_START = 6; // "Tan" starts at index 6
+        const TYPE_SPEED = 120;
+        const DELETE_SPEED = 60;
+        const PAUSE_AFTER_TYPE = 2000;
+        const PAUSE_AFTER_DELETE = 500;
 
-        function typeNext() {
-            if (partIdx >= parts.length) {
-                if (cursorEl) cursorEl.style.display = 'none';
-                return;
+        function render(len) {
+            typedEl.innerHTML = '';
+            const visible = FULL_TEXT.slice(0, len);
+            const normalPart = visible.slice(0, Math.min(len, HIGHLIGHT_START));
+            const highlightPart = len > HIGHLIGHT_START ? visible.slice(HIGHLIGHT_START) : '';
+
+            if (normalPart) {
+                typedEl.appendChild(document.createTextNode(normalPart));
             }
-            const part = parts[partIdx];
-            const char = part.text[charIdx];
-
-            if (charIdx === 0 && part.highlight) {
+            if (highlightPart) {
                 const span = document.createElement('span');
                 span.className = 'highlight';
+                span.textContent = highlightPart;
                 typedEl.appendChild(span);
             }
-
-            const target = part.highlight
-                ? typedEl.querySelector('.highlight')
-                : typedEl;
-
-            target.insertBefore(document.createTextNode(char), null);
-            charIdx++;
-
-            if (charIdx >= part.text.length) {
-                partIdx++;
-                charIdx = 0;
-            }
-            setTimeout(typeNext, SPEED);
         }
 
-        setTimeout(typeNext, 600);
+        let len = 0;
+        let deleting = false;
+
+        function tick() {
+            if (!deleting) {
+                len++;
+                render(len);
+                if (len >= FULL_TEXT.length) {
+                    deleting = true;
+                    setTimeout(tick, PAUSE_AFTER_TYPE);
+                } else {
+                    setTimeout(tick, TYPE_SPEED);
+                }
+            } else {
+                len--;
+                render(len);
+                if (len <= 0) {
+                    deleting = false;
+                    setTimeout(tick, PAUSE_AFTER_DELETE);
+                } else {
+                    setTimeout(tick, DELETE_SPEED);
+                }
+            }
+        }
+
+        setTimeout(tick, 600);
     }
 
     /* ── Scroll-reveal (IntersectionObserver) ── */
