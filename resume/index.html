@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Tan — Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="top-bar">
+        <div class="nav-left">
+            <span class="prompt">isaac@dev</span><span class="colon">:</span><span class="path">~/resume</span><span class="cursor-blink">$</span>
+        </div>
+        <div class="nav-links">
+            <a href="#about">about</a>
+            <a href="#experience">experience</a>
+            <a href="#skills">skills</a>
+            <a href="#projects">projects</a>
+            <a href="#education">education</a>
+            <a href="https://isaactan95.github.io/home" class="home-link">← home</a>
+        </div>
+        <button class="mobile-toggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <!-- HERO -->
+        <section id="about" class="hero">
+            <div class="hero-content">
+                <div class="terminal-tag">// whoami</div>
+                <h1>Isaac <span class="highlight">Tan</span></h1>
+                <p class="tagline">Automation Technical Lead &nbsp;|&nbsp; Python Developer &nbsp;|&nbsp; Unreal Engine Developer</p>
+                <div class="contact-row">
+                    <a href="mailto:isaactha95@gmail.com" class="contact-chip">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        isaactha95@gmail.com
+                    </a>
+                    <a href="tel:+60164482315" class="contact-chip">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        +(60) 16-448 2315
+                    </a>
+                    <span class="contact-chip lang-chip">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                        English, Chinese, Malay
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <span class="line-num">01</span>
+                <h2>experience<span class="bracket">()</span></h2>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Automation Technical Lead</h3>
+                                <span class="company">Innovate Core X &mdash; KL Eco City</span>
+                            </div>
+                            <span class="date-badge">Dec 2025 — Present</span>
+                        </div>
+                        <ul>
+                            <li>Oversee all automation projects</li>
+                            <li>Lead a team of 3 from different countries</li>
+                            <li>Manage resources across various countries</li>
+                            <li>Research and develop business solutions</li>
+                            <li>Mediator between different departments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Senior Developer</h3>
+                                <span class="company">Innovate Core X &mdash; KL Eco City</span>
+                            </div>
+                            <span class="date-badge">Jan 2025 — Nov 2025</span>
+                        </div>
+                        <ul>
+                            <li>Design and develop automation systems</li>
+                            <li>Research and development for business solutions</li>
+                            <li>Take lead in automation projects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Full-stack Developer</h3>
+                                <span class="company">Junglehouse HQ &mdash; Shah Alam</span>
+                            </div>
+                            <span class="date-badge">Jan 2024 — Dec 2024</span>
+                        </div>
+                        <ul>
+                            <li>Manage E-commerce department (Marketing, Design)</li>
+                            <li>Develop and design solutions using AWS &amp; Shopify</li>
+                            <li>Develop in-house applications</li>
+                            <li>Build automation to streamline business processes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Full-stack Developer</h3>
+                                <span class="company">Elfoco Global Sdn Bhd &mdash; Kuala Lumpur</span>
+                            </div>
+                            <span class="date-badge">Oct 2022 — Dec 2023</span>
+                        </div>
+                        <ul>
+                            <li>Maintain legacy systems &amp; solo new feature projects</li>
+                            <li>Lead juniors and onboard new team members</li>
+                            <li>Initiate CI/CD pipeline &amp; reform version control</li>
+                            <li>Develop APIs (C#)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Data Scientist / Full-stack Developer</h3>
+                                <span class="company">RPA Plus Sdn Bhd &mdash; Penang</span>
+                            </div>
+                            <span class="date-badge">Oct 2021 — Oct 2022</span>
+                        </div>
+                        <ul>
+                            <li>Deploy computer vision ML text recognition in factory</li>
+                            <li>Backend engineering (PHP, MySQL)</li>
+                            <li>Team Lead of 3; mentor juniors</li>
+                            <li>R&amp;D industrial AI with Intel Edge OpenVINO</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <span class="line-num">02</span>
+                <h2>skills<span class="bracket">()</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group" data-aos>
+                    <h4><span class="kw">const</span> languages = [</h4>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">R</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <h4>];</h4>
+                </div>
+                <div class="skill-group" data-aos>
+                    <h4><span class="kw">const</span> frameworks = [</h4>
+                    <div class="tags">
+                        <span class="tag">.NET</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Shopify</span>
+                        <span class="tag">Three.js</span>
+                        <span class="tag">Unreal Engine 5</span>
+                        <span class="tag">OpenVINO</span>
+                        <span class="tag">Apache Kafka</span>
+                        <span class="tag">Apache Spark</span>
+                    </div>
+                    <h4>];</h4>
+                </div>
+                <div class="skill-group" data-aos>
+                    <h4><span class="kw">const</span> domains = [</h4>
+                    <div class="tags">
+                        <span class="tag">System Architecture</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">RDS / NoSQL</span>
+                        <span class="tag">Reverse Engineering</span>
+                        <span class="tag">3D / Digital Twins</span>
+                    </div>
+                    <h4>];</h4>
+                </div>
+                <div class="skill-group" data-aos>
+                    <h4><span class="kw">const</span> softSkills = [</h4>
+                    <div class="tags">
+                        <span class="tag accent">Leadership</span>
+                        <span class="tag accent">Critical Thinking</span>
+                        <span class="tag accent">Problem Solving</span>
+                        <span class="tag accent">Cross-cultural Team Mgmt</span>
+                    </div>
+                    <h4>];</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <span class="line-num">03</span>
+                <h2>projects<span class="bracket">()</span></h2>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card featured" data-aos>
+                    <div class="card-top">
+                        <span class="folder-icon">&#128193;</span>
+                        <span class="project-year">Ongoing</span>
+                    </div>
+                    <h3>Massive Multiplayer Shooter Game</h3>
+                    <p>Developing a multiplayer shooter game using Unreal Engine 5 solo.</p>
+                    <div class="project-tags">
+                        <span>Unreal Engine 5</span><span>C++</span><span>Multiplayer</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos>
+                    <div class="card-top">
+                        <span class="folder-icon">&#128193;</span>
+                        <span class="project-year">2026</span>
+                    </div>
+                    <h3>Reverse Engineering</h3>
+                    <p>Fully automated pipeline for fund withdrawal via reverse-engineered APK APIs.</p>
+                    <div class="project-tags">
+                        <span>Android</span><span>Reverse Engineering</span><span>Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos>
+                    <div class="card-top">
+                        <span class="folder-icon">&#128193;</span>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Contextual AI Sales Chat</h3>
+                    <p>AI chat service representing a salesperson — studying historical chats with MCP tools.</p>
+                    <div class="project-tags">
+                        <span>AI / LLM</span><span>MCP</span><span>NLP</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos>
+                    <div class="card-top">
+                        <span class="folder-icon">&#128193;</span>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Withdrawal Automation</h3>
+                    <p>Semi-auto bank withdrawal automation resulting in 70% profit increase.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Automation</span><span>Finance</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos>
+                    <div class="card-top">
+                        <span class="folder-icon">&#128193;</span>
+                        <span class="project-year">2022</span>
+                    </div>
+                    <h3>3D / Digital Twins</h3>
+                    <p>3D immersive webpage digital-twinning factory conditions for live monitoring.</p>
+                    <div class="project-tags">
+                        <span>Three.js</span><span>WebGL</span><span>IoT</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos>
+                    <div class="card-top">
+                        <span class="folder-icon">&#128193;</span>
+                        <span class="project-year">2022</span>
+                    </div>
+                    <h3>Big Data Processing</h3>
+                    <p>Data pipeline processing 500 GB with Kafka streaming &amp; Spark parallel ML.</p>
+                    <div class="project-tags">
+                        <span>Kafka</span><span>Spark</span><span>ML</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos>
+                    <div class="card-top">
+                        <span class="folder-icon">&#128193;</span>
+                        <span class="project-year">2018 – 2020</span>
+                    </div>
+                    <h3>Automate FOREX Trading</h3>
+                    <p>Auto trading system achieving 1300% ROI on a 3-month real account trial.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Finance</span><span>Algo Trading</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <div class="section-header">
+                <span class="line-num">04</span>
+                <h2>education<span class="bracket">()</span></h2>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card" data-aos>
+                    <span class="edu-year">2019 — 2022</span>
+                    <h3>Master's Degree</h3>
+                    <p>Monash University Malaysia, Petaling Jaya</p>
+                </div>
+                <div class="edu-card" data-aos>
+                    <span class="edu-year">2016 — 2018</span>
+                    <h3>Bachelor's Degree in Finance</h3>
+                    <p>Curtin University, Perth, Australia</p>
+                </div>
+                <div class="edu-card" data-aos>
+                    <span class="edu-year">2013 — 2015</span>
+                    <h3>Diploma in Finance &amp; Investment</h3>
+                    <p>TARC, Penang, Malaysia</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><span class="kw">return</span> <span class="str">"Thanks for scrolling ✦"</span>;</p>
+        <p class="copy">&copy; 2026 Isaac Tan. Built with vanilla HTML/CSS/JS.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
