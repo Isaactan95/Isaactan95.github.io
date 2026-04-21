@@ -374,6 +374,15 @@ footer p{
 footer .str{color:#a5d6ff}
 footer .kw{color:#ff7b72}
 .copy{margin-top:.5rem;font-size:.75rem!important}
+.visitor-counter{
+    display:inline-flex;align-items:center;gap:8px;
+    margin-bottom:1.25rem;
+    color:#484f58;
+}
+.visitor-counter img{
+    height:20px;
+    border-radius:4px;
+}
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:768px){
