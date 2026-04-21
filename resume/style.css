@@ -56,8 +56,8 @@ body{
     letter-spacing:.5px;
 }
 .nav-links a:hover,.nav-links a:focus{color:#58a6ff}
-.home-link{color:#f0883e!important}
-.home-link:hover{color:#ffa657!important}
+.github-link{color:#f0883e!important}
+.github-link:hover{color:#ffa657!important}
 .mobile-toggle{
     display:none;
     background:none;border:none;cursor:pointer;
